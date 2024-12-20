@@ -18,3 +18,14 @@ const regali = [
   { nome: "Libro", prezzo: 10 },
   { nome: "Giocattolo", prezzo: 20 }
 ];
+
+console.log(calcolaTotale(regali));
+
+function calcolaTotale(array){
+  let somma = 0;
+  array.forEach(element => {
+    somma += element.prezzo;
+  })
+  return somma;
+}
+
